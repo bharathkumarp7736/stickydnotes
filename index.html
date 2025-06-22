@@ -1,1 +1,44 @@
 
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>StickyDNotes</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="yellow-note-paper-with-red-pin_1284-42430.avif"
+
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400&display=swap" rel="stylesheet">
+        
+    </head>
+
+    <body>
+        <div class="navbar">
+            <h1>StickyDNotes</h1>
+            
+        </div>
+
+        <div class="container">
+            <div class="note-container">
+                <h2>Hey there...</h2>
+                <input type="datetime-local" disabled>
+                <p>I am your "Sticky Note" — always ready to hold your quick thoughts, important tasks, and special ideas. Need to jot down a reminder, a goal, or something that makes you smile? Just write it on me! I’m also perfect for keeping track of your schedule — whether it’s a meeting, a birthday, or any date and time you don’t want to forget. Stick me where you need me most, and I’ll stay right by your side. Thank you for choosing me.... to help keep your day organized and your mind clear!</p>
+                <button onclick="deletenote(event)">Delete</button>
+            </div>
+        </div>
+
+        <div class="popup-overlay"></div>
+        <div class="popup-box">
+            <h2>Add Notes</h2>
+            <form>
+                <input type="text" placeholder="Note Title" id="note-title-input">
+                <input type="datetime-local" id="note-schedule-input" >
+                <textarea placeholder="Short Description" id="note-description-input"></textarea>
+                <button id="add-note">ADD</button>
+                <button id="cancle-popup">CANCEL</button>
+            </form>
+        </div>
+
+        <button class="add-button" id="add-popup-button">+</button>
+
+        <script src="javascript.js"></script>
+    </body>
+</html>
